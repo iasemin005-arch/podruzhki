@@ -1,0 +1,676 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Подружки — Салон красоты | Ош</title>
+<meta name="description" content="Салон красоты Подружки в Оше. Маникюр, педикюр, макияж, наращивание ресниц, стрижки, окрашивание. Запись онлайн.">
+<meta property="og:title" content="Подружки — Салон красоты | Ош">
+<meta property="og:description" content="Premium салон красоты в Оше. Запись по WhatsApp: +996 552 200 004">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{% static 'salon/css/styles.css' %}">
+</head>
+<body>
+<!-- NAV -->
+<nav id="navbar">
+  <a href="#" class="nav-logo">Подруж<span>ки</span></a>
+  <ul class="nav-links">
+    <li><a href="#services">Услуги</a></li>
+    <li><a href="#pricing">Прайс</a></li>
+    <li><a href="#masters">Мастера</a></li>
+    <li><a href="#reviews">Отзывы</a></li>
+    <li><a href="#contacts">Контакты</a></li>
+    <li><a href="#booking" class="nav-cta">Записаться</a></li>
+  </ul>
+  <div class="burger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#services" onclick="toggleMenu()">Услуги</a>
+  <a href="#pricing" onclick="toggleMenu()">Прайс</a>
+  <a href="#masters" onclick="toggleMenu()">Мастера</a>
+  <a href="#reviews" onclick="toggleMenu()">Отзывы</a>
+  <a href="#contacts" onclick="toggleMenu()">Контакты</a>
+  <a href="#booking" onclick="toggleMenu()" style="color:var(--gold)">Записаться →</a>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-left">
+    <p class="hero-eyebrow">Салон красоты · Ош, Кыргызстан</p>
+    <h1 class="hero-title">
+      Искусство<br>
+      <em>красоты</em><br>
+      для вас
+    </h1>
+    <p class="hero-subtitle">
+      Профессиональные мастера, современные техники и атмосфера настоящего отдыха — в самом сердце Оша.
+    </p>
+    <div class="hero-actions">
+      <a href="#booking" class="btn-primary">Записаться</a>
+      <a href="#pricing" class="btn-ghost">Смотреть прайс</a>
+    </div>
+    <div class="hero-stats">
+      <div>
+        <span class="stat-num">9,7K</span>
+        <span class="stat-label">Подписчиков</span>
+      </div>
+      <div>
+        <span class="stat-num">803</span>
+        <span class="stat-label">Публикаций</span>
+      </div>
+      <div>
+        <span class="stat-num">10+</span>
+        <span class="stat-label">Услуг</span>
+      </div>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="hero-bg-pattern"></div>
+    <div class="hero-ornament">
+      <div class="hero-center-text">✦</div>
+    </div>
+    <a href="https://instagram.com/salon_podruzhki_osh" target="_blank" class="hero-insta">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+      @salon_podruzhki_osh
+    </a>
+    <div class="hero-tag">Ош · Кыргызстан</div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-wrap">
+  <div class="marquee-track">
+    <span class="marquee-item">Маникюр <span class="marquee-dot"></span></span>
+    <span class="marquee-item">Педикюр <span class="marquee-dot"></span></span>
+    <span class="marquee-item">Макияж <span class="marquee-dot"></span></span>
+    <span class="marquee-item">Наращивание ресниц <span class="marquee-dot"></span></span>
+    <span class="marquee-item">Стрижки <span class="marquee-dot"></span></span>
+    <span class="marquee-item">Окрашивание <span class="marquee-dot"></span></span>
+    <span class="marquee-item">Кератин <span class="marquee-dot"></span></span>
+    <span class="marquee-item">Шугаринг <span class="marquee-dot"></span></span>
+    <span class="marquee-item">Косметология <span class="marquee-dot"></span></span>
+    <!-- duplicate for seamless loop -->
+    <span class="marquee-item">Маникюр <span class="marquee-dot"></span></span>
+    <span class="marquee-item">Педикюр <span class="marquee-dot"></span></span>
+    <span class="marquee-item">Макияж <span class="marquee-dot"></span></span>
+    <span class="marquee-item">Наращивание ресниц <span class="marquee-dot"></span></span>
+    <span class="marquee-item">Стрижки <span class="marquee-dot"></span></span>
+    <span class="marquee-item">Окрашивание <span class="marquee-dot"></span></span>
+    <span class="marquee-item">Кератин <span class="marquee-dot"></span></span>
+    <span class="marquee-item">Шугаринг <span class="marquee-dot"></span></span>
+    <span class="marquee-item">Косметология <span class="marquee-dot"></span></span>
+  </div>
+</div>
+
+<!-- SERVICES OVERVIEW -->
+<section id="services">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">Наши услуги</span>
+      <h2 class="section-title">Всё для вашей <em>красоты</em></h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="services-grid">
+      <div class="service-card reveal">
+        <span class="service-icon">💅</span>
+        <div class="service-name">Маникюр & Педикюр</div>
+        <div class="service-from">от</div>
+        <div class="service-range">400 – 1 500 сом</div>
+        <ul class="service-items">
+          <li><span>Маникюр без покрытия</span><span>400 с</span></li>
+          <li><span>Маникюр с покрытием</span><span>800 с</span></li>
+          <li><span>Наращивание ногтей</span><span>1 500 с</span></li>
+          <li><span>Педикюр с покрытием</span><span>1 500 с</span></li>
+        </ul>
+      </div>
+      <div class="service-card reveal">
+        <span class="service-icon">✨</span>
+        <div class="service-name">Макияж</div>
+        <div class="service-from">от</div>
+        <div class="service-range">800 – 3 000 сом</div>
+        <ul class="service-items">
+          <li><span>Дневной макияж</span><span>1 000 с</span></li>
+          <li><span>Вечерний</span><span>1 200 с</span></li>
+          <li><span>Свадебный</span><span>3 000 с</span></li>
+          <li><span>Коррекция бровей</span><span>200 с</span></li>
+        </ul>
+      </div>
+      <div class="service-card reveal">
+        <span class="service-icon">👁</span>
+        <div class="service-name">Наращивание ресниц</div>
+        <div class="service-from">от</div>
+        <div class="service-range">1 000 – 1 700 сом</div>
+        <ul class="service-items">
+          <li><span>Классический объём</span><span>1 000 с</span></li>
+          <li><span>2D объём</span><span>1 300 с</span></li>
+          <li><span>3D объём</span><span>1 500 с</span></li>
+          <li><span>Мега объём</span><span>1 700 с</span></li>
+        </ul>
+      </div>
+      <div class="service-card reveal">
+        <span class="service-icon">✂️</span>
+        <div class="service-name">Стрижки & Укладки</div>
+        <div class="service-from">от</div>
+        <div class="service-range">800 – 1 000 сом</div>
+        <ul class="service-items">
+          <li><span>Стрижка</span><span>800–900 с</span></li>
+          <li><span>Топ-мастер Айпери</span><span>900–1 000 с</span></li>
+          <li><span>Вечерняя укладка</span><span>600 с</span></li>
+          <li><span>Вечерние прически</span><span>700–900 с</span></li>
+        </ul>
+      </div>
+      <div class="service-card reveal">
+        <span class="service-icon">🌈</span>
+        <div class="service-name">Окрашивание</div>
+        <div class="service-from">от</div>
+        <div class="service-range">800 – 15 000 сом</div>
+        <ul class="service-items">
+          <li><span>В один тон (длинные)</span><span>800–1 000 с</span></li>
+          <li><span>Блонд (короткие)</span><span>6 000–7 000 с</span></li>
+          <li><span>Блонд (средние)</span><span>8 000–10 000 с</span></li>
+          <li><span>Блонд (длинные)</span><span>12 000–15 000 с</span></li>
+        </ul>
+      </div>
+      <div class="service-card reveal">
+        <span class="service-icon">🔑</span>
+        <div class="service-name">Кератин & Завивка</div>
+        <div class="service-from">от</div>
+        <div class="service-range">2 500 – 8 000 сом</div>
+        <ul class="service-items">
+          <li><span>Кератин (короткие)</span><span>3 000–3 500 с</span></li>
+          <li><span>Кератин (средние)</span><span>3 500–5 000 с</span></li>
+          <li><span>Кератин (длинные)</span><span>6 000–8 000 с</span></li>
+          <li><span>Хим. завивка</span><span>от 2 500 с</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICE LIST -->
+<section id="pricing">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">Актуальный прайс</span>
+      <h2 class="section-title">Наши <em>цены</em></h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="price-tabs">
+      <button class="price-tab active" onclick="switchTab(event, 'nails')">Ногти</button>
+      <button class="price-tab" onclick="switchTab(event, 'makeup')">Макияж & Брови</button>
+      <button class="price-tab" onclick="switchTab(event, 'lashes')">Ресницы</button>
+      <button class="price-tab" onclick="switchTab(event, 'hair')">Волосы</button>
+      <button class="price-tab" onclick="switchTab(event, 'color')">Окрашивание</button>
+      <button class="price-tab" onclick="switchTab(event, 'keratin')">Кератин</button>
+    </div>
+
+    <div class="price-panel active" id="tab-nails">
+      <div class="price-category">
+        <h3 class="price-cat-title">Маникюр</h3>
+        <ul class="price-list">
+          <li class="price-item"><span class="price-item-name">Маникюр без покрытия</span><span class="price-item-cost">400 <span>сом</span></span></li>
+          <li class="price-item"><span class="price-item-name">Маникюр с покрытием (шеллак)</span><span class="price-item-cost">800 <span>сом</span></span></li>
+          <li class="price-item"><span class="price-item-name">Наращивание ногтей</span><span class="price-item-cost">1 500 <span>сом</span></span></li>
+          <li class="price-item"><span class="price-item-name">Коррекция ногтей</span><span class="price-item-cost">1 000 <span>сом</span></span></li>
+          <li class="price-item"><span class="price-item-name">Ремонт ногтей</span><span class="price-item-cost">150 <span>сом</span></span></li>
+          <li class="price-item"><span class="price-item-name">Снятие покрытия</span><span class="price-item-cost">100–200 <span>сом</span></span></li>
+          <li class="price-item"><span class="price-item-name">Мужской маникюр</span><span class="price-item-cost">600 <span>сом</span></span></li>
+          <li class="price-item"><span class="price-item-name">Дизайн ногтей</span><span class="price-item-cost">150–200 <span>сом</span></span></li>
+        </ul>
+      </div>
+      <div class="price-category">
+        <h3 class="price-cat-title">Педикюр</h3>
+        <ul class="price-list">
+          <li class="price-item"><span class="price-item-name">Педикюр с покрытием</span><span class="price-item-cost">1 500 <span>сом</span></span></li>
+          <li class="price-item"><span class="price-item-name">Гигиенический педикюр</span><span class="price-item-cost">800 <span>сом</span></span></li>
+          <li class="price-item"><span class="price-item-name">Smart педикюр</span><span class="price-item-cost">1 000 <span>сом</span></span></li>
+          <li class="price-item"><span class="price-item-name">Мужской педикюр</span><span class="price-item-cost">1 500 <span>сом</span></span></li>
+          <li class="price-item"><span class="price-item-name">Снятие покрытия</span><span class="price-item-cost">200 <span>сом</span></span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="price-panel" id="tab-makeup">
+      <div class="price-category">
+        <h3 class="price-cat-title">Макияж</h3>
+        <ul class="price-list">
+          <li class="price-item"><span class="price-item-name">Дневной макияж</span><span class="price-item-cost">1 000 <span>сом</span></span></li>
+          <li class="price-item"><span class="price-item-name">Вечерний макияж</span><span class="price-item-cost">1 200 <span>сом</span></span></li>
+          <li class="price-item"><span class="price-item-name">Возрастной макияж</span><span class="price-item-cost">800 <span>сом</span></span></li>
+          <li class="price-item"><span class="price-item-name">Свадебный макияж</span><span class="price-item-cost">3 000 <span>сом</span></span></li>
+          <li class="price-item"><span class="price-item-name">Накладные ресницы</span><span class="price-item-cost">200 <span>сом</span></span></li>
+          <li class="price-item"><span class="price-item-name">Коррекция бровей</span><span class="price-item-cost">200 <span>сом</span></span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="price-panel" id="tab-lashes">
+      <div class="price-category">
+        <h3 class="price-cat-title">Наращивание ресниц</h3>
+        <ul class="price-list">
+          <li class="price-item"><span class="price-item-name">Классический объём</span><span class="price-item-cost">1 000 <span>сом</span></span></li>
+          <li class="price-item"><span class="price-item-name">Двойной объём 2D</span><span class="price-item-cost">1 300 <span>сом</span></span></li>
+          <li class="price-item"><span class="price-item-name">Тройной объём 3D</span><span class="price-item-cost">1 500 <span>сом</span></span></li>
+          <li class="price-item"><span class="price-item-name">Мега объём</span><span class="price-item-cost">1 700 <span>сом</span></span></li>
+          <li class="price-item"><span class="price-item-name">Снятие</span><span class="price-item-cost">200 <span>сом</span></span></li>
+          <li class="price-item"><span class="price-item-name">Ламинирование ресниц</span><span class="price-item-cost">1 000 <span>сом</span></span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="price-panel" id="tab-hair">
+      <div class="price-category">
+        <h3 class="price-cat-title">Стрижки & Укладки</h3>
+        <ul class="price-list">
+          <li class="price-item"><span class="price-item-name">Стрижка</span><span class="price-item-cost">800–900 <span>сом</span></span></li>
+          <li class="price-item"><span class="price-item-name">Стрижка у топ-мастера Айпери Ибраимовой</span><span class="price-item-cost">900–1 000 <span>сом</span></span></li>
+          <li class="price-item"><span class="price-item-name">Вечерняя укладка</span><span class="price-item-cost">600 <span>сом</span></span></li>
+          <li class="price-item"><span class="price-item-name">Экспресс локоны</span><span class="price-item-cost">700 <span>сом</span></span></li>
+          <li class="price-item"><span class="price-item-name">Вечерние локоны</span><span class="price-item-cost">900 <span>сом</span></span></li>
+          <li class="price-item"><span class="price-item-name">Собранные прически</span><span class="price-item-cost">800–1 000 <span>сом</span></span></li>
+          <li class="price-item"><span class="price-item-name">Наращивание волос</span><span class="price-item-cost">3 000 <span>сом</span></span></li>
+          <li class="price-item"><span class="price-item-name">Полировка волос</span><span class="price-item-cost">900 <span>сом</span></span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="price-panel" id="tab-color">
+      <div class="price-category">
+        <h3 class="price-cat-title">Окрашивание</h3>
+        <ul class="price-list">
+          <li class="price-item"><span class="price-item-name">Окрашивание в один тон (длинные)</span><span class="price-item-cost">800–1 000 <span>сом</span></span></li>
+        </ul>
+      </div>
+      <div class="price-category">
+        <h3 class="price-cat-title">Модное окрашивание (обесцвечивание + тонирование)</h3>
+        <ul class="price-list">
+          <li class="price-item"><span class="price-item-name">Короткие (10–30 см)</span><span class="price-item-cost">6 000–7 000 <span>сом</span></span></li>
+          <li class="price-item"><span class="price-item-name">Средние (30–50 см)</span><span class="price-item-cost">8 000–10 000 <span>сом</span></span></li>
+          <li class="price-item"><span class="price-item-name">Длинные (от 50 см)</span><span class="price-item-cost">12 000–15 000 <span>сом</span></span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="price-panel" id="tab-keratin">
+      <div class="price-category">
+        <h3 class="price-cat-title">Кератиновое выпрямление</h3>
+        <ul class="price-list">
+          <li class="price-item"><span class="price-item-name">Короткие волосы</span><span class="price-item-cost">3 000–3 500 <span>сом</span></span></li>
+          <li class="price-item"><span class="price-item-name">Средние волосы</span><span class="price-item-cost">3 500–5 000 <span>сом</span></span></li>
+          <li class="price-item"><span class="price-item-name">Длинные волосы</span><span class="price-item-cost">6 000–8 000 <span>сом</span></span></li>
+        </ul>
+      </div>
+      <div class="price-category">
+        <h3 class="price-cat-title">Химическая завивка</h3>
+        <ul class="price-list">
+          <li class="price-item"><span class="price-item-name">Короткие волосы</span><span class="price-item-cost">2 500 <span>сом</span></span></li>
+          <li class="price-item"><span class="price-item-name">Средние / длинные волосы</span><span class="price-item-cost">3 000–9 000 <span>сом</span></span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BOOKING -->
+<section id="booking">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">Онлайн запись</span>
+      <h2 class="section-title">Запишитесь<br><em>прямо сейчас</em></h2>
+      <div class="section-line" style="background:var(--gold)"></div>
+    </div>
+    <div class="booking-grid">
+      <div class="booking-info reveal">
+        <h3>Ваш визит начинается здесь</h3>
+        <p>Заполните форму — и мы свяжемся с вами в WhatsApp для подтверждения записи. Ваш комфорт и время — наш приоритет.</p>
+        <h3>Рабочее время</h3>
+        <p>Пн – Пт: 9:00 – 20:00<br>Сб – Вс: 9:00 – 19:00</p>
+        <div class="booking-contact">
+          <div class="contact-item">
+            <div class="contact-icon">📍</div>
+            <span>ул. Курманжан Датка, 181, Ош</span>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">📱</div>
+            <span>+996 552 200 004</span>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">📸</div>
+            <span>@salon_podruzhki_osh</span>
+          </div>
+        </div>
+      </div>
+      <div class="reveal">
+        {% if messages %}
+        <div class="form-success" id="formSuccess" style="display:block; margin-bottom: 24px;">
+          {% for message in messages %}
+            <h4>✦ Спасибо!</h4>
+            <p>{{ message }}</p>
+          {% endfor %}
+        </div>
+        {% endif %}
+        {% if form.errors %}
+        <div class="form-success" style="display:block; margin-bottom: 24px; border-color:#b86b6b;">
+          <h4 style="color:#f2b3b3;">Проверьте форму</h4>
+          <p>{{ form.non_field_errors|striptags }}</p>
+        </div>
+        {% endif %}
+        <form class="booking-form" id="bookingForm" method="post" action="#booking">
+          {% csrf_token %}
+          <div class="form-row">
+            <div class="form-group">
+              <label for="id_name">Ваше имя</label>
+              {{ form.name }}
+            </div>
+            <div class="form-group">
+              <label for="id_whatsapp">WhatsApp</label>
+              {{ form.whatsapp }}
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="id_service">Услуга</label>
+            {{ form.service }}
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="id_appointment_date">Дата</label>
+              {{ form.appointment_date }}
+            </div>
+            <div class="form-group">
+              <label for="id_appointment_time">Время</label>
+              {{ form.appointment_time }}
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="id_comment">Комментарий (необязательно)</label>
+            {{ form.comment }}
+          </div>
+          <button type="submit" class="btn-submit">Записаться</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MASTERS -->
+<section id="masters">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">Наша команда</span>
+      <h2 class="section-title">Мастера <em>салона</em></h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="masters-grid">
+      <div class="master-card reveal">
+        <div class="master-photo">
+          <div class="master-photo-inner">
+            <span class="master-initial">А</span>
+          </div>
+        </div>
+        <div class="master-name">Айпери Ибраимова</div>
+        <div class="master-role">Топ-мастер · Руководитель</div>
+        <div class="master-spec">Стрижки · Окрашивание · Кератин</div>
+      </div>
+      <div class="master-card reveal">
+        <div class="master-photo">
+          <div class="master-photo-inner">
+            <span class="master-initial">М</span>
+          </div>
+        </div>
+        <div class="master-name">Мастер маникюра</div>
+        <div class="master-role">Nail-мастер</div>
+        <div class="master-spec">Маникюр · Педикюр · Наращивание</div>
+      </div>
+      <div class="master-card reveal">
+        <div class="master-photo">
+          <div class="master-photo-inner">
+            <span class="master-initial">В</span>
+          </div>
+        </div>
+        <div class="master-name">Визажист</div>
+        <div class="master-role">Make-up Artist</div>
+        <div class="master-spec">Макияж · Брови · Праздничные образы</div>
+      </div>
+      <div class="master-card reveal">
+        <div class="master-photo">
+          <div class="master-photo-inner">
+            <span class="master-initial">Л</span>
+          </div>
+        </div>
+        <div class="master-name">Мастер ресниц</div>
+        <div class="master-role">Lash-мастер</div>
+        <div class="master-spec">Наращивание · Ламинирование ресниц</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section id="why">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">Почему мы</span>
+      <h2 class="section-title">Наши <em>преимущества</em></h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="why-grid">
+      <div class="why-item reveal">
+        <span class="why-num">✦</span>
+        <h4 class="why-title">Профессиональные мастера</h4>
+        <p class="why-text">Все мастера имеют профессиональную подготовку и постоянно повышают квалификацию</p>
+      </div>
+      <div class="why-item reveal">
+        <span class="why-num">✦</span>
+        <h4 class="why-title">Премиальные материалы</h4>
+        <p class="why-text">Используем только качественную профессиональную косметику и инструменты</p>
+      </div>
+      <div class="why-item reveal">
+        <span class="why-num">✦</span>
+        <h4 class="why-title">9 767+ подписчиков</h4>
+        <p class="why-text">Одни из самых популярных в Оше — реальные отзывы и работы в Instagram</p>
+      </div>
+      <div class="why-item reveal">
+        <span class="why-num">✦</span>
+        <h4 class="why-title">Удобное расположение</h4>
+        <p class="why-text">Центр Оша, ул. Курманжан Датка 181 — легко добраться из любого района</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section id="reviews">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">Отзывы клиентов</span>
+      <h2 class="section-title">О нас <em>говорят</em></h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="reviews-grid">
+      <div class="review-card reveal">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">«Потрясающий результат! Делала маникюр с покрытием — мастер очень аккуратная, всё чисто и красиво. Обязательно вернусь!»</p>
+        <div class="review-author">Гульнара А.</div>
+        <div class="review-service">Маникюр с покрытием</div>
+      </div>
+      <div class="review-card reveal">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">«Делала кератин у Айпери — волосы просто шёлк! Цена отличная для такого результата. Всем советую!»</p>
+        <div class="review-author">Мира К.</div>
+        <div class="review-service">Кератиновое выпрямление</div>
+      </div>
+      <div class="review-card reveal">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">«Свадебный макияж был просто идеальным. Так и держался весь день. Огромное спасибо мастеру!»</p>
+        <div class="review-author">Камила Р.</div>
+        <div class="review-service">Свадебный макияж</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INSTAGRAM -->
+<section id="instagram">
+  <div class="container">
+    <div class="instagram-header reveal">
+      <h2 style="font-family:'Cormorant Garamond',serif;font-size:40px;font-weight:300;color:var(--cream)">Наши <em style="font-style:italic;color:var(--gold)">работы</em></h2>
+      <a href="https://instagram.com/salon_podruzhki_osh" target="_blank" class="instagram-link">
+        Подписаться в Instagram →
+      </a>
+    </div>
+    <div class="instagram-grid reveal">
+      <div class="insta-tile"><div class="insta-tile-inner">💅</div><div class="insta-overlay"><span>💅</span></div></div>
+      <div class="insta-tile"><div class="insta-tile-inner">✨</div><div class="insta-overlay"><span>✨</span></div></div>
+      <div class="insta-tile"><div class="insta-tile-inner">👁</div><div class="insta-overlay"><span>👁</span></div></div>
+      <div class="insta-tile"><div class="insta-tile-inner">✂️</div><div class="insta-overlay"><span>✂️</span></div></div>
+      <div class="insta-tile"><div class="insta-tile-inner">🌸</div><div class="insta-overlay"><span>🌸</span></div></div>
+    </div>
+    <p style="text-align:center;margin-top:28px;font-size:13px;color:rgba(245,240,235,0.4);letter-spacing:1px">
+      Смотрите больше работ в нашем Instagram <a href="https://instagram.com/salon_podruzhki_osh" target="_blank" style="color:var(--gold);text-decoration:none">@salon_podruzhki_osh</a>
+    </p>
+  </div>
+</section>
+
+<!-- CONTACTS -->
+<section id="contacts">
+  <div class="container">
+    <div class="contacts-grid">
+      <div class="contacts-info reveal">
+        <h3>Приходите,<br>будем рады<br><em style="font-style:italic;color:var(--gold)">вас видеть</em></h3>
+        <div class="contact-row">
+          <div class="contact-row-icon">📍</div>
+          <div class="contact-row-content">
+            <label>Адрес</label>
+            <p>ул. Курманжан Датка, 181<br>Ош, Кыргызстан</p>
+          </div>
+        </div>
+        <div class="contact-row">
+          <div class="contact-row-icon">📱</div>
+          <div class="contact-row-content">
+            <label>WhatsApp</label>
+            <p><a href="https://wa.me/996552200004">+996 552 200 004</a></p>
+          </div>
+        </div>
+        <div class="contact-row">
+          <div class="contact-row-icon">⏰</div>
+          <div class="contact-row-content">
+            <label>Время работы</label>
+            <p>Пн – Пт: 9:00 – 20:00<br>Сб – Вс: 9:00 – 19:00</p>
+          </div>
+        </div>
+        <div class="contact-row">
+          <div class="contact-row-icon">📸</div>
+          <div class="contact-row-content">
+            <label>Instagram</label>
+            <p><a href="https://instagram.com/salon_podruzhki_osh" target="_blank">@salon_podruzhki_osh</a></p>
+          </div>
+        </div>
+        <a href="https://wa.me/996552200004" target="_blank" class="btn-primary" style="display:inline-block;margin-top:24px;text-decoration:none">
+          Написать в WhatsApp
+        </a>
+      </div>
+      <div class="reveal">
+        <div class="map-placeholder">
+          <span style="font-size:36px">📍</span>
+          <span>Курманжан Датка 181, Ош</span>
+          <a href="https://maps.google.com/?q=Курманжан+Датка+181+Ош+Кыргызстан" target="_blank" class="map-open">
+            Открыть на карте →
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="nav-logo">Подруж<span>ки</span></a>
+        <p>Салон красоты в Оше. Парикмахерские услуги, ногтевой сервис, макияж, шугаринг, косметология и обучение.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Услуги</h4>
+        <ul>
+          <li><a href="#pricing">Маникюр & Педикюр</a></li>
+          <li><a href="#pricing">Макияж</a></li>
+          <li><a href="#pricing">Наращивание ресниц</a></li>
+          <li><a href="#pricing">Стрижки</a></li>
+          <li><a href="#pricing">Окрашивание</a></li>
+          <li><a href="#pricing">Кератин</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Контакты</h4>
+        <ul>
+          <li><a href="https://wa.me/996552200004">+996 552 200 004</a></li>
+          <li><a href="https://instagram.com/salon_podruzhki_osh" target="_blank">Instagram</a></li>
+          <li><a href="#booking">Онлайн запись</a></li>
+          <li><a href="#contacts">Как добраться</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Салон красоты «Подружки», Ош</span>
+      <span>Разработано с ❤️</span>
+    </div>
+  </div>
+</footer>
+
+<!-- WHATSAPP FLOAT -->
+<a href="https://wa.me/996552200004" target="_blank" class="whatsapp-float" title="Написать в WhatsApp">
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+  </svg>
+</a>
+
+<script>
+// Price tabs
+function switchTab(tab) {
+  document.querySelectorAll('.price-tab').forEach(t => t.classList.remove('active'));
+  document.querySelectorAll('.price-panel').forEach(p => p.classList.remove('active'));
+  event.target.classList.add('active');
+  document.getElementById('tab-' + tab).classList.add('active');
+}
+
+// Form
+function submitForm(e) {
+  e.preventDefault();
+  document.getElementById('bookingForm').style.display = 'none';
+  document.getElementById('formSuccess').style.display = 'block';
+}
+
+// Mobile menu
+function toggleMenu() {
+  document.getElementById('mobileMenu').classList.toggle('open');
+}
+
+// Scroll reveal
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
+}, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+// Set min date for booking
+const dateInput = document.querySelector('input[type="date"]');
+if (dateInput) {
+  const today = new Date().toISOString().split('T')[0];
+  dateInput.min = today;
+}
+</script>
+<script src="{% static 'salon/js/app.js' %}"></script>
+</body>
+</html>
