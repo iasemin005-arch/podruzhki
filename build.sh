@@ -2,3 +2,4 @@
 set -o errexit
 python manage.py migrate
 python manage.py collectstatic --noinput
+python create_admin.py
